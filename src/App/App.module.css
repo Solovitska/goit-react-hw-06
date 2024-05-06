@@ -1,0 +1,16 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 16px;
+  padding: 40px;
+}
+.mainTitle {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

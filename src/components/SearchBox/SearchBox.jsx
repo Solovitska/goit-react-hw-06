@@ -1,0 +1,27 @@
+import styles from "./SearchBox.module.css";
+import { changeFilter } from "../../redux/filtersSlice";
+import { useDispatch } from "react-redux";
+
+const SearchBox = () => {
+  const dispatch = useDispatch();
+
+  const handleChange = (e) => {
+    const searchName = e.target.value;
+    dispatch(changeFilter(searchName));
+  };
+
+  return (
+    <div>
+      <p className={styles.label}>Find contacts by name</p>
+      <input
+        className={styles.searchField}
+        placeholder="Please enter a name"
+        name="searchName"
+        type="text"
+        onChange={handleChange}
+      />
+    </div>
+  );
+};
+
+export default SearchBox;
