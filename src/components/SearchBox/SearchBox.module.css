@@ -1,11 +1,18 @@
 .label {
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .searchField {
-  padding: 4px;
+  padding: 8px;
   border: 1px solid rgb(54, 54, 54);
   border-radius: 4px;
-  width: 320px;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
+
+.searchField:focus {
+  border-color: #007bff;
+  outline: none;}
